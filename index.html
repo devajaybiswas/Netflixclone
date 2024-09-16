@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+         body {
+            font-family: Martel Sans;
+            margin: 0;
+         }
+        
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #logo {
+            height: 30px;
+            width: 100px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+        #nav-container { display: inline-block;
+        }
+        li.nav-item {
+            display: inline;
+            color: white;
+            margin: 10px;
+            font-size: 20px;
+        }
+        #header { position: fixed;
+            top: 0; left: 0;
+            z-index: 1;
+            width: 100%;
+        }
+        #main {
+            width: 100vw;
+            height: 100vh;
+            background-color: blue;
+            /* background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/335ddde7-3955-499c-b4cc-ca2eb7e1ae71/a7d20bc1-831c-4f9d-8153-11bdf7a08d23/IN-en-20240624-POP_SIGNUP_TWO_WEEKS-perspective_WEB_13cda806-d858-493e-b4aa-f2792ff965dc_medium.jpg); */
+            /* position: fixed;
+            top:50px; 
+            left:0px; */
+            position: fixed;
+        }
+        #bimg {
+            width: 100vw; 
+            height: 120vh;
+            position: fixed ;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        #nav-container {
+         position: absolute;
+         top: 25px;
+        }
+        #l2 {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            top: 30%;
+            left: 30%;
+            right: 30%;
+            bottom: 50%;
+        
+        }
+        #rtw {
+            padding: 10px;
+            padding-left: 0px;
+        }
+        #email {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            top: 50%;
+            left: 30%;
+            right: 30%;
+            bottom: 50%;
+        }
+        #frm {
+    background-color: rgba(0, 0, 0, 0.977); /* Dark, semi-transparent background */
+    padding: 10px; /* Add padding inside the container */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertical alignment */
+    width: fit-content; /* Adjust width based on content */
+}
+
+#frm input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.041); /* Semi-transparent white background for input */
+    color: white; /* White text color */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    padding: 10px; /* Add padding inside the input field */
+    border-radius: 3px 0 0 3px; /* Rounded corners on the left side */
+    outline: none; /* Remove default outline */
+    width: 200px; /* Set the width of the input field */
+}
+
+#frm input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter color for the placeholder text */
+}
+
+#frm input[type="submit"] {
+    background-color: red; /* Bright red background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for the button */
+    border-radius: 0 3px 3px 0; /* Rounded corners on the right side */
+    cursor: pointer; /* Change cursor on hover */
+    font-weight: bold; /* Bold text */
+    display: inline-block
+    align-items: center;
+}
+
+#frm input[type="submit"]::after {
+    content: " ➔"; /* Add arrow after the text */
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="/Assets/Netflix_2015_logo.svg.png" alt="Netflix" />
+    <div id="nav-container">
+        <ul>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Tv Shows</li>
+            <li class="nav-item">Movies</li>
+            <li class="nav-item">New & Popular</li>
+            <li class="nav-item">My List</li>
+            <li class="nav-item">Browse By Languages</li>
+        </ul>
+        </div>
+    </div>
+    <div>
+        <img />
+        <img />
+        <img />
+        <img />
+    </div>
+    <div id="main">
+        <img id="bimg" src="https://assets.nflxext.com/ffe/siteui/vlv3/335ddde7-3955-499c-b4cc-ca2eb7e1ae71/a7d20bc1-831c-4f9d-8153-11bdf7a08d23/IN-en-20240624-POP_SIGNUP_TWO_WEEKS-perspective_WEB_13cda806-d858-493e-b4aa-f2792ff965dc_medium.jpg" alt="Image"/>
+
+    </div>
+    <div id="l2">
+        <h1>
+            <b> Unlimited movies, Tv shows and more </b>
+        </h1>
+        <p> Watch anywhere. Cancel anytime </p>
+        <p id="rtw">
+        Ready to watch? Enter your email to create or restart your membership
+        </p>
+    </div>
+    <div id="frm">
+    <form id="email" action="#"> 
+        <label for="email"></label>
+<input type="email" name="Email" id="" placeholder="Email">
+<input type="submit" value="Get Started">
+    </form>
+    </div>
+</body>
+</html>
